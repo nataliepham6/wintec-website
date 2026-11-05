@@ -66,8 +66,9 @@ button { font: inherit; cursor: pointer; }
 .site-header.scrolled .lang-switch { background: var(--paper); border-color: var(--line); }
 .lang-switch button {
   border: 0; background: transparent; color: inherit; font-size: 13px; font-weight: 700;
-  padding: 6px 11px; border-radius: 999px; transition: background .2s, color .2s;
+  padding: 6px 11px; border-radius: 999px; transition: background .2s, color .2s; white-space: nowrap;
 }
+@media (max-width: 360px) { .brand-text { display: none; } }
 .lang-switch button.active { background: var(--orange); color: #fff; }
 
 .menu-toggle { display: none; width: 44px; height: 44px; border: 0; background: transparent; color: inherit; position: relative; }
